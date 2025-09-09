@@ -15,6 +15,7 @@
     ],
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/viacheslavprokosa/courier-php-sdk",
     "autoload": {
       "psr-4": {
         "Courier\\": "src/"
