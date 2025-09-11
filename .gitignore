@@ -22,3 +22,9 @@ cache/
 # Env
 .env
 .env.*
+
+# Docker
+docker-compose.yaml
+Dockerfile
+docker.md
+.dockerignore
