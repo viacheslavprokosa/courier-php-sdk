@@ -1,34 +1,41 @@
 {
-    "name": "viacheslavprokosa/courier-php-sdk",
-    "description": "Courier API SDK in PHP. Provides a unified interface for shipment tracking with support for multiple couriers and authentication strategies.",
-    "keywords": [
-      "php",
-      "courier",
-      "tracking",
-      "shipping",
-      "delivery",
-      "logistics",
-      "shipment",
-      "api",
-      "sdk",
-      "parcel"
-    ],
-    "type": "library",
-    "license": "MIT",
-    "homepage": "https://github.com/viacheslavprokosa/courier-php-sdk",
-    "autoload": {
-      "psr-4": {
-        "Courier\\": "src/"
-      }
-    },
-    "require": {
-      "php": ">=8.3 <9.0",
-      "psr/http-client": "^1.0",
-      "psr/http-message": "^1.0",
-      "guzzlehttp/guzzle": "^7.0"
-    },
-    "require-dev": {
-      "phpunit/phpunit": "^10.0"
+  "name": "viacheslavprokosa/courier-php-sdk",
+  "description": "Courier API SDK in PHP. Provides a unified interface for shipment tracking with support for multiple couriers and authentication strategies.",
+  "keywords": [
+    "php",
+    "courier",
+    "tracking",
+    "shipping",
+    "delivery",
+    "logistics",
+    "shipment",
+    "api",
+    "sdk",
+    "parcel"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/viacheslavprokosa/courier-php-sdk",
+  "autoload": {
+    "psr-4": {
+      "Courier\\": "src/"
     }
+  },
+  "require": {
+    "php": ">=8.3 <9.0",
+    "psr/http-client": "^1.0",
+    "psr/http-message": "^1.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "test": "phpunit",
+  "post-install-cmd": [
+    "@test"
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
   }
-  
+}
