@@ -26,5 +26,5 @@ cache/
 # Docker
 docker-compose.yaml
 Dockerfile
-docker.md
 .dockerignore
+Makefile
